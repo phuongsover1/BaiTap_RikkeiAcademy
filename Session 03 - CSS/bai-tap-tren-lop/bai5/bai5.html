@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tổng Hợp Form-Table</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <form method="post" action="#">
+        <table cellspacing="10">
+          <tbody>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="First Name"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Last Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  placeholder="Your Phone"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="country" id="country">
+                  <option value="defaule">Select Country</option>
+                </select>
+              </td>
+              <td>
+                <select name="course" id="course">
+                  <option value="default">Select Course</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <textarea placeholder="Content" rows="10" cols="55"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <button class="btnSubmit">Submit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+  </body>
+</html>
