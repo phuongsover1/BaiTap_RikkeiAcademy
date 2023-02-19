@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ôn Lại Form</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>FORM đăng ký sinh viên</legend>
+      <form action="" method="post" enctype="multipart/form-data">
+        <label for="studentID">Mã sinh viên</label><br />
+        <input
+          placeholder="Nhập vào mã sinh viên "
+          type="text"
+          name="studentID"
+          id="studentID"
+        />
+        <br /><br />
+        <label for="studentName">Tên sinh viên</label><br />
+        <input
+          placeholder="Nhập vào tên sinh viên "
+          type="text"
+          name="studentName"
+          id="studentName"
+        /><br /><br />
+        <label for="username">Tài khoản ĐK</label><br />
+        <input
+          type="text"
+          name="username"
+          placeholder="Nhập vào tài khoản đăng ký "
+          id="username"
+        /><br /><br />
+        <label for="password">Mật khẩu</label><br />
+        <input
+          placeholder="Nhập vào mật khẩu "
+          type="password"
+          name="password"
+          id="password"
+        /><br /><br />
+        <label for="checkPassword">Xác nhận mật khẩu</label><br />
+        <input
+          type="password"
+          name="checkPassword"
+          placeholder="Nhập vào xác nhận mật khẩu "
+          id="checkPassword"
+        />
+        <br /><br />
+        <label for="birthday">Ngày sinh</label><br />
+        <input type="date" name="birthday" id="birthday" /><br /><br />
+        <label for="age">Tuổi</label><br />
+        <input
+          placeholder="Nhập tuổi (số)"
+          type="number"
+          min="1"
+          name="age"
+          id="age"
+        /><br /><br />
+        <label for="">Giới tính </label><br />
+        <input type="radio" name="sex" id="male" /><label for="male"
+          >Nam
+        </label>
+        <input type="radio" name="sex" id="female" /><label for="female"
+          >Nữ </label
+        ><br /><br />
+        <label for="">Sở thích </label> <br />
+        <input type="checkbox" name="pingpong" id="pingpong" /><label
+          for="pingpong"
+          >Bóng bàn
+        </label>
+        <input type="checkbox" name="soccer" id="soccer" /><label for="soccer"
+          >Bóng đá
+        </label>
+        <input type="checkbox" name="badminton" id="badminton" /><label
+          for="badminton"
+          >Cầu lông
+        </label>
+        <input type="checkbox" name="tennis" id="tennis" /><label for="tennis"
+          >Tennis</label
+        >
+        <input type="checkbox" name="golf" id="golf" /><label for="golf"
+          >Golf
+        </label>
+        <br /><br />
+        <label for="nguyenquan">Nguyên quán</label> <br />
+        <select name="nguyenquan" id="nguyenquan">
+          <option value="hanoi">Hà Nội</option>
+          <option value="danang">Đà Nẵng</option>
+          <option value="hochiminh">Hồ Chí Minh</option>
+        </select>
+        <br /><br />
+        <label for="color">Màu sắc yêu thích </label> <br />
+        <input
+          type="color"
+          name="color"
+          placeholder="Chọn màu sắc yêu thích "
+          id="color"
+        />
+        <br /><br />
+        <label for="picture">Ảnh chân dung </label> <br />
+        <input
+          placeholder="Chọn ảnh"
+          type="file"
+          name="picture"
+          id="picture"
+        /><br /><br />
+        <label for="registerContent">Nội dung đăng kí </label><br />
+        <textarea
+          id="registerContent"
+          name="registerContent"
+          rows="10"
+          cols="50"
+        ></textarea>
+        <br /><br />
+        <input type="submit" value="Đăng ký" />
+      </form>
+    </fieldset>
+  </body>
+</html>
