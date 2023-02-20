@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #6d07ab;
+}
+
+button {
+  cursor: pointer;
+}
+
+strong {
+  color: #555;
+}
+
+.text-center {
+  text-align: center;
+}
+.header {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.form-container {
+  width: 60%;
+  max-width: 550px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 1px 1px 10px #ccc;
+  border-radius: 5px;
+  color: #666;
+}
+.login-form > p {
+  margin: 1rem 0;
+}
+
+tr td:nth-child(2) {
+  width: 50%;
+}
+
+table {
+  width: 100%;
+}
+
+input:not(input[type="checkbox"]) {
+  width: 100%;
+  padding: 0.9rem;
+  background: #eef0ef;
+  border: none;
+}
+
+.submitBtn {
+  width: 100%;
+  color: #fff;
+  background: #359bef;
+  padding: 1rem 0;
+  border: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
