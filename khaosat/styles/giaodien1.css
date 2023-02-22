@@ -8,7 +8,13 @@ ul {
   list-style-type: none;
 }
 body {
-  background: #ec419d;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 148, 246, 1) 0%,
+    rgba(204, 9, 205, 1) 72%,
+    rgba(249, 15, 254, 1) 100%
+  );
 }
 
 button {
@@ -54,7 +60,13 @@ a:visited {
 
 button.active {
   color: #fff;
-  background: #ec419d;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 148, 246, 1) 0%,
+    rgba(204, 9, 205, 1) 72%,
+    rgba(249, 15, 254, 1) 100%
+  );
   border: 1px solid #ec419d;
 }
 
@@ -80,7 +92,13 @@ input {
   padding: 1rem 0;
   border: 1px solid #ec419d;
   font-size: 1.2rem;
-  background: #ec419d;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 148, 246, 1) 0%,
+    rgba(204, 9, 205, 1) 72%,
+    rgba(249, 15, 254, 1) 100%
+  );
   color: #fff;
   border-radius: 5px;
 }
