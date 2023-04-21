@@ -19,7 +19,6 @@ class App extends Component {
   usernameValidation = usernameInputEvent => {
     const usernameInputValue = usernameInputEvent.target.value;
     this.setState({ username: usernameInputValue, usernameErrorMessage: '' });
-    // var username = document.getElementById('username');
     var issueArr = [];
     if (/[-!@#$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/.test(usernameInputValue)) {
       issueArr.push('No special characters!');
@@ -28,14 +27,10 @@ class App extends Component {
       });
     }
     if (issueArr.length > 0) {
-      // username.setCustomValidity(issueArr);
-      // username.style.borderColor = alertRedInput;
       this.setState({
         usernameInputStyle: { borderColor: this.alertRedInput },
       });
     } else {
-      // username.setCustomValidity('');
-      // username.style.borderColor = defaultInput;
       this.setState({
         usernameErrorMessage: '',
         usernameInputStyle: { borderColor: this.defaultInput },
@@ -46,7 +41,6 @@ class App extends Component {
 
   passwordValidation = passwordInputEvent => {
     const passwordInputValue = passwordInputEvent.target.value;
-    // var password = document.getElementById("password");
     this.setState({ password: passwordInputValue, passwordErrorMessage: '' });
     var issueArr = [];
     if (!/^.{7,15}$/.test(passwordInputValue)) {
@@ -82,8 +76,6 @@ class App extends Component {
       });
     }
     if (issueArr.length > 0) {
-      // password.setCustomValidity(issueArr.join('\n'));
-      // password.style.borderColor = alertRedInput;
       this.setState({
         passwordInputStyle: { borderColor: this.alertRedInput },
       });
