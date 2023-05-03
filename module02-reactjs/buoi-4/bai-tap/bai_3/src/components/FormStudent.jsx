@@ -12,6 +12,7 @@ const FormStudent = props => {
     e.preventDefault();
     console.log(studentState);
     props.addStudentHandler(studentState);
+    props.closeFormHandler();
   };
 
   const onChangeHandler = e => {

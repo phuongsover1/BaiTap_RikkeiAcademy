@@ -39,14 +39,19 @@ function App() {
 
   const onAddStudentHandler = student => {
     console.log('in handler');
-    let existStudent = studentList.find(item => item.id === student.id);
-    if (!existStudent) {
+    let existStudent = studentList.findIndex(item => {
+      console.log(item.id);
+      return item.id === student.id;
+    });
+    console.log('exis index', existStudent);
+    if (existStudent == -1) {
       setStudentList([...studentList, student]);
       return;
     }
 
-    existStudent = student;
-    setStudentList([...studentList]);
+    const newStudentList = studentList;
+    newStudentList[existStudent] = student;
+    setStudentList([...newStudentList]);
   };
 
   return (
